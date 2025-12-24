@@ -18,27 +18,32 @@ A "Vibe Coding" interface that transforms rough website ideas into professional,
 git clone [https://github.com/yourusername/vibe-coder.git](https://github.com/yourusername/vibe-coder.git)
 cd vibe-coder
 npm install
+```
+
+### 2. Configure Environment
+Create a .env.local file in the root directory and add your Groq API key:
 
 GROQ_API_KEY=gsk_your_actual_key_here
 
+Note: This project uses Groq for instant AI responses. You can get a free key at [console.groq.com](https://console.groq.com) 
+
+### 3. Run Development Server
+```bash
 npm run dev
+```
 
 Open http://localhost:3000 to see the app.
 
-💡 How it Works
+### 💡 How it Works
 Input: User enters a vague idea (e.g., "A dark portfolio for a photographer").
 
 Process: The backend sends the prompt to Llama 3.3 via Groq with a strict system prompt to act as a Product Designer.
 
 Output: Returns a structured Markdown brief including Color Palette, Typography, Key Features, and Tech Stack.
 
-✅ Project Highlights
+### ✅ Project Highlights
 Real-time Feel: Optimized for speed using Groq instead of standard LLM endpoints.
 
 Glassmorphism UI: Modern, dark-mode aesthetic consistent with "Stunning" design language.
 
 Clean Architecture: Separation of concerns between Client UI and API logic.
-
-
-### Next Step for You
-Would you like me to create the **`.gitignore`** file as well to ensure you don't accidentally commit your node_modules or API keys?
